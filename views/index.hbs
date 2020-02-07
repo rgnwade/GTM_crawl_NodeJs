@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GTM scraper</title>
+    <!--Load bootstrap.css file-->
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron">
+            <h1 class="display-4">Check GTM Website</h1>
+            <form action="/scraper" id="scrap" method="POST" role="form">
+             <input type="text" class="form-control" id="urlwebsite" name="urlwebsite">
+            <button type="submit" class="btn btn-primary">Submit</button></form>
+            {{gtm}}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!--Load bootstrap.js file-->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
